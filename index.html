@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sowmiya V Portfolio</title>
     <link id="theme-style" rel="stylesheet" href="light-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <header class="navbar">
         <div class="container">
             <h1 class="logo">Sowmiya V</h1>
@@ -14,9 +16,20 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#">Experience <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#work-experience">Work Experience</a></li>
+                            <li><a href="#internship-experience">Internship Experience</a></li>
+                            <li><a href="#leadership-experience">Leadership Experience</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#education-certification">Education & Certification</a></li>
+                    <li><a href="#awards">Awards</a></li>
+                    <li><a href="#events">Events</a></li>
                     <li><a href="#blog">Blog</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -24,6 +37,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <h2>Welcome to Sowmiya V's Portfolio</h2>
@@ -31,6 +45,124 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>I am an MBA candidate with a strong foundation in project management, leadership, and technical expertise. I strive to deliver impactful solutions through collaboration and innovation.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div id="work-experience">
+                <h3>Work Experience</h3>
+                <p>Details about work experience...</p>
+            </div>
+            <div id="internship-experience">
+                <h3>Internship Experience</h3>
+                <p>Details about internship experience...</p>
+            </div>
+            <div id="leadership-experience">
+                <h3>Leadership Experience</h3>
+                <p>Details about leadership experience...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certification Section -->
+    <section id="education-certification">
+        <div class="container">
+            <h2>Education & Certification</h2>
+            <p>Details about education and certifications...</p>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <h2>Awards</h2>
+            <p>Details about awards...</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Events</h2>
+            <div class="event-card">
+                <img src="event1.jpg" alt="Event Image">
+                <div class="event-info">
+                    <h3>Event Title</h3>
+                    <p>Hosted by: Organization</p>
+                    <p>Date: DD/MM/YYYY</p>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-item">
+                <img src="blog1.jpg" alt="Blog Thumbnail">
+                <div class="blog-info">
+                    <h3>Blog Title</h3>
+                    <p>A brief description of the blog...</p>
+                    <a href="https://sowmiyeh.notion.site" target="_blank">Read More</a>
+                </div>
+            </div>
+            <!-- Add more blog items as needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project Image">
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <a href="https://www.behance.net/sowmiyeh" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <p>"Sowmiya is a remarkable leader and a team player. She consistently delivers outstanding results."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
     <script src="theme-toggle.js"></script>
 </body>
 </html>
