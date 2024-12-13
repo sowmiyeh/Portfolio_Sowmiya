@@ -1,97 +1,29 @@
-/* styles.css */
-
-:root {
-    --bg-color: #f9f9f9;
-    --text-color: #333;
-    --primary-color: #4caf50;
-    --header-bg-color: #4caf50;
-    --header-text-color: #fff;
+/* Add styles for the dropdown in the navbar */
+.navbar .dropdown {
+    position: relative;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar {
-    background-color: var(--header-bg-color);
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: var(--header-bg-color);
     color: var(--header-text-color);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar ul {
     list-style: none;
-    display: flex;
-    gap: 1rem;
     margin: 0;
-    padding: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar ul li a {
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu li {
+    margin: 0.5rem 0;
+}
+
+.navbar .dropdown-menu a {
     color: var(--header-text-color);
     text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar #themeToggle {
-    background-color: transparent;
-    color: var(--header-text-color);
-    border: 1px solid var(--header-text-color);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-
-.profile {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-.profile .contact-info {
-    color: var(--text-color);
-}
-
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-main section {
-    margin-bottom: 2rem;
-}
-
-main section h2 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-main section ul {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-}
-
-footer {
-    background-color: var(--header-bg-color);
-    color: var(--header-text-color);
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
 }
