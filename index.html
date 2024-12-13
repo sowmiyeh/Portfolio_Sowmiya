@@ -4,106 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sowmiya V Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link id="theme-style" rel="stylesheet" href="light-theme.css">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar">
-        <div class="profile">
-            <img src="https://i.imgur.com/MiKJakv.jpg" alt="Sowmiya V">
-            <h1>Sowmiya V</h1>
-            <p>Bangalore, India</p>
-            <a href="mailto:sowmiyavenkatesan611@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-            <a href="https://linkedin.com/in/sowmiyavenkatesan" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Sowmiya V</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Toggle Theme</button>
         </div>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#speaker">Speaker Sections</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="themeToggle">Toggle Theme</button>
-    </nav>
+    </header>
 
-    <!-- Main Content -->
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>MBA candidate with a strong background in project management, currently leading teams at MetaZen. Successfully managed large-scale initiatives, including overseeing 27,000 contributors for GSSoC'24 at Girlscript Foundation. Demonstrated expertise in driving project success, leading teams, and fostering strategic collaborations.</p>
-        </section>
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Sowmiya V's Portfolio</h2>
+            <p>MBA candidate specializing in project management and leadership.</p>
+        </div>
+    </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div>
-                <h3>AMITY UNIVERSITY, Noida, India</h3>
-                <p>Master of Business Administration (Jan 2024 - Present)</p>
-            </div>
-            <div>
-                <h3>SASTRA DEEMED UNIVERSITY, Thanjavur, India</h3>
-                <p>Bachelor of Computer Application (June 2018 - June 2021)</p>
-            </div>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <h3>Work Experience</h3>
-            <p><strong>MetaZen Private Limited</strong>, Pune, India (Dec 2023 - Present)</p>
-            <p>Led a team of 15+ professionals in design and content creation.</p>
-
-            <h3>Internship Experience</h3>
-            <p><strong>CodXCrypt Community</strong>, Remote, India (May 2021 - Sep 2021)</p>
-            <p>Increased community engagement by 25% through innovative initiatives.</p>
-        </section>
-
-        <section id="awards">
-            <h2>Awards</h2>
-            <ul>
-                <li>GirlScript 21 Under 21 Award winner of 2021</li>
-                <li>Medium: Top writer in Design</li>
-            </ul>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Project and Program Management</li>
-                <li>Team Management</li>
-                <li>Agile, Scrum</li>
-                <li>WordPress, Jira</li>
-            </ul>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Product Strategy Micro-Certification (PSC)™️ | Product School</li>
-                <li>Project Management Certification | Great Learning Academy</li>
-            </ul>
-        </section>
-
-        <section id="blogs">
-            <h2>Blogs</h2>
-            <p>Check out my blogs <a href="https://sowmiyeh.notion.site/Sowmiya-V-85be1b491b554f5d92134cd693111682" target="_blank">here</a>.</p>
-        </section>
-
-        <section id="speaker">
-            <h2>Speaker Sections</h2>
-            <p>Delivered impactful sessions on resume tailoring and open-source contributions.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:sowmiyavenkatesan611@gmail.com">sowmiyavenkatesan611@gmail.com</a></p>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
