@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmiya Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4CAF50, #009688);
+            color: white;
+            padding: 2em 1em;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            margin: 0.5em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+        .container {
+            padding: 2em 1em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 3em;
+            background: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 1.8em;
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5em 0;
+            padding-left: 1em;
+            position: relative;
+        }
+        ul li:before {
+            content: '•';
+            color: #4CAF50;
+            position: absolute;
+            left: 0;
+            top: 0.1em;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+        }
+        .skills-grid div {
+            background: #f1f1f1;
+            padding: 1em;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #555;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 2em;
+            background: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sowmiya Portfolio</h1>
+        <p>Bangalore, India • sowmiyavenkatesan611@gmail.com</p>
+        <p><a href="https://linkedin.com/in/sowmiyavenkatesan" style="color: yellow; text-decoration: underline;">LinkedIn Profile</a></p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About</h2>
+            <p>A dedicated professional with expertise in management and product strategy, currently pursuing MBA at Amity University.</p>
+        </section>
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>MetaZen Private Limited:</strong> Directed a team of 15+ professionals, improving client retention by 25%.</li>
+                <li><strong>Infosys Limited:</strong> Delivered 15+ large-scale projects with 95% client satisfaction.</li>
+            </ul>
+        </section>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>Master of Business Administration, Amity University (Grade: 9.00 SGPA)</li>
+                <li>Bachelor of Computer Application, SASTRA Deemed University (Grade: 7.34 CGPA)</li>
+            </ul>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>Java, COBOL, JCL</div>
+                <div>HTML, CSS, JavaScript</div>
+                <div>JIRA, Confluence, Trello</div>
+                <div>Zoho CRM, Notion</div>
+            </div>
+        </section>
+        <section id="awards" class="section">
+            <h2>Leadership & Awards</h2>
+            <ul>
+                <li>GirlScript 21 Under 21 Award</li>
+                <li>Google Crowdsource Mentor</li>
+                <li>Reimagined GirlScript website for branding objectives</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sowmiya Portfolio. All Rights Reserved.</p>
+        <p>Designed by <a href="mailto:sowmiyavenkatesan611@gmail.com">Sowmiya</a></p>
+    </footer>
+</body>
+</html>
