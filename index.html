@@ -3,160 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sowmiya Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(45deg, #4CAF50, #009688);
-            color: white;
-            padding: 2em 1em;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        header p {
-            margin: 0.5em 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #333;
-        }
-        nav a {
-            color: white;
-            padding: 1em 1.5em;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background: #4CAF50;
-            color: white;
-        }
-        .container {
-            padding: 2em 1em;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .section {
-            margin-bottom: 3em;
-            background: white;
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            margin-top: 0;
-            font-size: 1.8em;
-            color: #4CAF50;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5em;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 0.5em 0;
-            padding-left: 1em;
-            position: relative;
-        }
-        ul li:before {
-            content: '•';
-            color: #4CAF50;
-            position: absolute;
-            left: 0;
-            top: 0.1em;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1em;
-        }
-        .skills-grid div {
-            background: #f1f1f1;
-            padding: 1em;
-            text-align: center;
-            border-radius: 5px;
-            font-weight: bold;
-            color: #555;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 2em;
-            background: #333;
-            color: white;
-            font-size: 0.9em;
-        }
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+    <title>Sowmiya V Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Sowmiya Portfolio</h1>
-        <p>Bangalore, India • sowmiyavenkatesan611@gmail.com</p>
-        <p><a href="https://linkedin.com/in/sowmiyavenkatesan" style="color: yellow; text-decoration: underline;">LinkedIn Profile</a></p>
+        <div class="container">
+            <h1>Sowmiya V</h1>
+            <p>Bangalore, India</p>
+            <p><a href="mailto:sowmiyavenkatesan611@gmail.com">sowmiyavenkatesan611@gmail.com</a></p>
+            <p><a href="https://linkedin.com/in/sowmiyavenkatesan" target="_blank">linkedin.com/in/sowmiyavenkatesan</a></p>
+        </div>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#awards">Awards</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About</h2>
-            <p>A dedicated professional with expertise in management and product strategy, currently pursuing MBA at Amity University.</p>
+
+    <main>
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>MBA candidate with a strong background in project management, currently leading teams at MetaZen. Successfully managed large-scale initiatives, including overseeing 27,000 contributors for GSSoC'24 at Girlscript Foundation. Demonstrated expertise in driving project success, leading teams, and fostering strategic collaborations.</p>
         </section>
-        <section id="experience" class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>MetaZen Private Limited:</strong> Directed a team of 15+ professionals, improving client retention by 25%.</li>
-                <li><strong>Infosys Limited:</strong> Delivered 15+ large-scale projects with 95% client satisfaction.</li>
-            </ul>
-        </section>
-        <section id="education" class="section">
+
+        <section class="education">
             <h2>Education</h2>
-            <ul>
-                <li>Master of Business Administration, Amity University (Grade: 9.00 SGPA)</li>
-                <li>Bachelor of Computer Application, SASTRA Deemed University (Grade: 7.34 CGPA)</li>
-            </ul>
-        </section>
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div>Java, COBOL, JCL</div>
-                <div>HTML, CSS, JavaScript</div>
-                <div>JIRA, Confluence, Trello</div>
-                <div>Zoho CRM, Notion</div>
+            <div>
+                <h3>AMITY UNIVERSITY, Noida, India</h3>
+                <p>Master of Business Administration <span>(Jan 2024 - Present)</span></p>
+                <ul>
+                    <li>Delivered a session as a speaker for the IEEE WIE Student Branch, CUH, on 'Tailoring Your Resume for Every Opportunity.'</li>
+                    <li>Mentored for the IEEE IGTDUW on Open Source Week 2024.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>SASTRA DEEMED UNIVERSITY, Thanjavur, India</h3>
+                <p>Bachelor of Computer Application <span>(June 2018 - June 2021)</span></p>
+                <ul>
+                    <li>Delivered a thorough 10-day training to over 65 mentees in the Education Outreach Program.</li>
+                    <li>Equipped 45+ mentees with crucial design skills through a rigorous 100-day program for The Uplift Project'21.</li>
+                </ul>
             </div>
         </section>
-        <section id="awards" class="section">
-            <h2>Leadership & Awards</h2>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div>
+                <h3>Associate Manager</h3>
+                <p>MetaZen Private Limited, Pune, India <span>(Dec 2023 - Present)</span></p>
+                <ul>
+                    <li>Led a diverse team of 15+ professionals in areas like graphic design, content creation, and UI/UX design.</li>
+                    <li>Managed project proposals, documentation, and recruitment for 500+ candidates.</li>
+                    <li>Collaborated with universities and recruiters, contributing to top honors at innovation challenges.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Senior Systems Associate</h3>
+                <p>Infosys Limited, Chennai, India <span>(Sep 2021 - Nov 2023)</span></p>
+                <ul>
+                    <li>Promoted to Senior System Associate within 1.5 years.</li>
+                    <li>Completed 15+ projects ahead of schedule using JIRA and Confluence for tracking.</li>
+                    <li>Recognized with Insta Awards and the Rock Star award for exceptional contributions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
             <ul>
-                <li>GirlScript 21 Under 21 Award</li>
-                <li>Google Crowdsource Mentor</li>
-                <li>Reimagined GirlScript website for branding objectives</li>
+                <li>Project and Program Management, HR Recruitment, Team Management</li>
+                <li>Strategic Production Planning, Agile, Scrum</li>
+                <li>MS Office Suite, Google Workspace, Jira, WordPress</li>
             </ul>
         </section>
-    </div>
+
+        <section class="certifications">
+            <h2>Training & Certification</h2>
+            <ul>
+                <li>Product Strategy Micro-Certification (PSC)™️ | Product School</li>
+                <li>Project Management Certification | Great Learning Academy</li>
+                <li>Postman API Fundamentals Student Expert | Postman</li>
+            </ul>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Sowmiya Portfolio. All Rights Reserved.</p>
-        <p>Designed by <a href="mailto:sowmiyavenkatesan611@gmail.com">Sowmiya</a></p>
+        <p>&copy; 2024 Sowmiya V Portfolio</p>
     </footer>
 </body>
 </html>
