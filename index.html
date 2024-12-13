@@ -6,24 +6,41 @@
     <title>Sowmiya V Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="container">
             <h1>Sowmiya V</h1>
-            <p>Bangalore, India</p>
-            <p><a href="mailto:sowmiyavenkatesan611@gmail.com">sowmiyavenkatesan611@gmail.com</a></p>
-            <p><a href="https://linkedin.com/in/sowmiyavenkatesan" target="_blank">linkedin.com/in/sowmiyavenkatesan</a></p>
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+            <button id="themeToggle">Toggle Theme</button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="profile">
+            <img src="https://i.imgur.com/MiKJakv.jpg" alt="Sowmiya V">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:sowmiyavenkatesan611@gmail.com">sowmiyavenkatesan611@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sowmiyavenkatesan" target="_blank">linkedin.com/in/sowmiyavenkatesan</a></p>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="summary">
+        <section id="summary" class="summary">
             <h2>Summary</h2>
             <p>MBA candidate with a strong background in project management, currently leading teams at MetaZen. Successfully managed large-scale initiatives, including overseeing 27,000 contributors for GSSoC'24 at Girlscript Foundation. Demonstrated expertise in driving project success, leading teams, and fostering strategic collaborations.</p>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
             <h2>Education</h2>
             <div>
                 <h3>AMITY UNIVERSITY, Noida, India</h3>
@@ -43,7 +60,7 @@
             </div>
         </section>
 
-        <section class="experience">
+        <section id="experience" class="experience">
             <h2>Work Experience</h2>
             <div>
                 <h3>Associate Manager</h3>
@@ -54,18 +71,9 @@
                     <li>Collaborated with universities and recruiters, contributing to top honors at innovation challenges.</li>
                 </ul>
             </div>
-            <div>
-                <h3>Senior Systems Associate</h3>
-                <p>Infosys Limited, Chennai, India <span>(Sep 2021 - Nov 2023)</span></p>
-                <ul>
-                    <li>Promoted to Senior System Associate within 1.5 years.</li>
-                    <li>Completed 15+ projects ahead of schedule using JIRA and Confluence for tracking.</li>
-                    <li>Recognized with Insta Awards and the Rock Star award for exceptional contributions.</li>
-                </ul>
-            </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Project and Program Management, HR Recruitment, Team Management</li>
@@ -74,7 +82,7 @@
             </ul>
         </section>
 
-        <section class="certifications">
+        <section id="certifications" class="certifications">
             <h2>Training & Certification</h2>
             <ul>
                 <li>Product Strategy Micro-Certification (PSC)™️ | Product School</li>
@@ -87,5 +95,7 @@
     <footer>
         <p>&copy; 2024 Sowmiya V Portfolio</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
